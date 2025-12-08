@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RCA 247 - Automação Inteligente via WhatsApp</title>
+  <meta name="description" content="RCA 247 - Automação de atendimento e comunicação via WhatsApp com IA para empresas, condomínios, escolas e provedores de serviço.">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    body {
+      background: #f5f7fb;
+      color: #111827;
+      line-height: 1.5;
+    }
+    header {
+      background: linear-gradient(135deg, #0f766e, #0369a1);
+      color: #f9fafb;
+      padding: 32px 16px;
+    }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+    .logo {
+      font-weight: 700;
+      font-size: 1.4rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .tagline {
+      margin-top: 12px;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+    .hero {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      gap: 24px;
+      align-items: center;
+    }
+    .hero-title {
+      font-size: 1.9rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .hero-subtitle {
+      font-size: 1rem;
+      opacity: 0.95;
+      margin-bottom: 16px;
+    }
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .badge {
+      font-size: 0.75rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(15,118,110,0.12);
+      border: 1px solid rgba(209,250,229,0.4);
+      color: #e5e7eb;
+      white-space: nowrap;
+    }
+    .cta-box {
+      background: rgba(15,23,42,0.22);
+      border-radius: 12px;
+      padding: 12px 14px;
+      font-size: 0.9rem;
+    }
+    .cta-label {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .cta-line {
+      opacity: 0.9;
+    }
+    .hero-card {
+      background: rgba(15,23,42,0.22);
+      border-radius: 16px;
+      padding: 16px;
+      font-size: 0.85rem;
+    }
+    .hero-card-title {
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .hero-card-list {
+      list-style: none;
+    }
+    .hero-card-list li {
+      margin-bottom: 6px;
+    }
+    main {
+      padding: 32px 0 24px;
+    }
+    section {
+      margin-bottom: 28px;
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 20px 18px;
+      box-shadow: 0 8px 20px rgba(15,23,42,0.06);
+      border: 1px solid #e5e7eb;
+    }
+    section h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #0f172a;
+    }
+    section p {
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+      color: #374151;
+    }
+    .cols {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 14px;
+      margin-top: 6px;
+    }
+    .pill-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 4px;
+    }
+    .pill-list li {
+      font-size: 0.8rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #ecfeff;
+      border: 1px solid #bae6fd;
+      color: #0f172a;
+    }
+    .data-block {
+      font-size: 0.9rem;
+      background: #f9fafb;
+      border-radius: 12px;
+      padding: 12px;
+      border: 1px dashed #d1d5db;
+      margin-top: 8px;
+    }
+    .data-block p {
+      margin-bottom: 4px;
+    }
+    .label {
+      font-weight: 600;
+      color: #111827;
+    }
+    .small {
+      font-size: 0.8rem;
+      color: #6b7280;
+    }
+    footer {
+      padding: 16px 0 24px;
+      font-size: 0.8rem;
+      color: #6b7280;
+      text-align: center;
+    }
+    a {
+      color: #0369a1;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 720px) {
+      .hero {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      header {
+        padding-top: 20px;
+      }
+      .hero-title {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">RCA 247</div>
+      <p class="tagline">Automação inteligente via WhatsApp para comunicação, atendimento e cobrança ativa 24 horas por dia.</p>
+
+      <div class="hero">
+        <div>
+          <h1 class="hero-title">Automação profissional de comunicação via WhatsApp com IA</h1>
+          <p class="hero-subtitle">
+            A RCA 247 oferece soluções de automação de atendimento e envio ativo de mensagens via WhatsApp
+            para empresas, condomínios, escolas, provedores de serviços e concessionárias de saneamento.
+          </p>
+
+          <div class="hero-badges">
+            <span class="badge">Atendimento 24/7</span>
+            <span class="badge">Integração com IA</span>
+            <span class="badge">Foco em comunicação oficial</span>
+            <span class="badge">Modelos de mensagem aprovados</span>
+          </div>
+
+          <div class="cta-box">
+            <div class="cta-label">Contato para demonstração</div>
+            <div class="cta-line">
+              WhatsApp: <strong>(67) 9 XXXX-XXXX</strong> • E-mail: <strong>contato@rca247.com.br</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card-title">Principais aplicações</div>
+          <ul class="hero-card-list">
+            <li>• Avisos automáticos e comunicados oficiais</li>
+            <li>• Cobrança ativa com mensagens iniciadas pela empresa</li>
+            <li>• Lembretes de vencimento, consultas e reuniões</li>
+            <li>• Atendimento inicial automatizado com inteligência artificial</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <section>
+        <h2>Sobre a RCA 247</h2>
+        <p>
+          A RCA 247 é uma empresa focada em automação de comunicação e atendimento via WhatsApp, com uso de
+          inteligência artificial e fluxos inteligentes para reduzir custos operacionais e melhorar a experiência
+          dos usuários finais.
+        </p>
+        <p>
+          Atuamos no desenvolvimento de soluções sob medida, com foco inicial em saneamento, atendimento técnico,
+          cobrança ativa e comunicação institucional. A mesma base tecnológica pode ser aplicada em outros segmentos
+          como escolas, condomínios, clínicas, provedores de internet e empresas de serviços em geral.
+        </p>
+      </section>
+
+      <section>
+        <h2>Setores atendidos</h2>
+        <div class="cols">
+          <div>
+            <p><strong>Saneamento e serviços essenciais</strong></p>
+            <p class="small">
+              Avisos de interrupção, manutenção programada, qualidade da água, notificações de fatura e canais de
+              atendimento automatizado para clientes.
+            </p>
+          </div>
+          <div>
+            <p><strong>Condomínios e administração predial</strong></p>
+            <p class="small">
+              Comunicados gerais, regras internas, manutenção, agendamentos de áreas comuns e canal único de
+              comunicação com moradores via WhatsApp.
+            </p>
+          </div>
+          <div>
+            <p><strong>Escolas e instituições de ensino</strong></p>
+            <p class="small">
+              Envio de avisos a responsáveis, lembretes de reuniões, comunicados pedagógicos, cobrança ativa e
+              recebimento de demandas de forma organizada.
+            </p>
+          </div>
+          <div>
+            <p><strong>Empresas de serviços em geral</strong></p>
+            <p class="small">
+              Provedores de internet, clínicas, escritórios e outras organizações que desejam profissionalizar o
+              atendimento e o relacionamento via WhatsApp.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Funcionalidades principais</h2>
+        <p>
+          A solução RCA 247 foi desenhada para ser flexível e escalável, permitindo desde um atendimento simples até
+          fluxos complexos com IA e integrações externas.
+        </p>
+        <ul class="pill-list">
+          <li>Atendimento automatizado no WhatsApp</li>
+          <li>Respostas inteligentes com IA</li>
+          <li>Envio ativo de mensagens com modelos aprovados</li>
+          <li>Notificações de fatura e lembretes de vencimento</li>
+          <li>Comunicados gerais e avisos de manutenção</li>
+          <li>Registro e categorização de solicitações</li>
+          <li>Relatórios e visão geral de atendimento</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Dados da empresa</h2>
+        <p class="small">
+          As informações abaixo podem ser utilizadas para fins de validação e verificação empresarial em plataformas
+          digitais.
+        </p>
+        <div class="data-block">
+          <p><span class="label">Razão Social:</span> RCA 247 (Microempreendedor Individual)</p>
+          <p><span class="label">CNPJ:</span> 63.667.686/0001-99</p>
+          <p><span class="label">Cidade / Estado:</span> Paranaíba – MS</p>
+          <p><span class="label">Área de atuação:</span> Automação de comunicação via WhatsApp, atendimento e cobrança ativa com IA.</p>
+          <p><span class="label">Contato:</span> (67) 9 8124-6551 • julianombrito67@gmail.com</p>
+        </div>
+        <p class="small">
+          Observação: este site institucional é utilizado como ponto oficial de referência e apresentação dos serviços
+          de automação oferecidos pela RCA 247.
+        </p>
+      </section>
+
+      <section>
+        <h2>Contato e demonstração</h2>
+        <p>
+          Para conhecer melhor as soluções de automação da RCA 247 ou solicitar uma demonstração do sistema integrado
+          com WhatsApp e IA, entre em contato pelos canais abaixo:
+        </p>
+        <p class="small">
+          WhatsApp: (67) 9 XXXX-XXXX<br />
+          E-mail: contato@rca247.com.br
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> RCA 247. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
